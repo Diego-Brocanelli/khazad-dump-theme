@@ -1,0 +1,61 @@
+{
+    "name": "khazad-dump",
+    "version": "1.0.0",
+    "displayName": "khazad-dump",
+    "publisher": "Diego Brocanelli",
+    "license": "MIT",
+    "description": "A Dark theme focused on a soft and pleasant color palette for long hours of programming.",
+    "scripts": {
+        "build": "node ./scripts/build.js",
+        "lint": "node ./scripts/lint.js",
+        "package": "vsce package -o ./bin/dracula.vsix",
+        "vscode:prepublish": "npm run build",
+        "vsce-publish": "vsce publish"
+    },
+    "maintainers": [
+        "Diego Brocanelli"
+    ],
+    "engines": {
+      "vscode": "^1.94.0"
+    },
+    "categories": [
+      "Themes"
+    ],
+    "keywords": [
+        "khazad-dump",
+        "khazad",
+        "dump",
+        "Khazâd dûmp",
+        "Khazâd",
+        "dûmp",
+        "dark",
+        "theme",
+        "color-theme"
+    ],
+    "icon": "images/icon.png",
+    "contributes": {
+      "themes": [
+        {
+          "label": "Khazâd dûmp",
+          "uiTheme": "vs-dark",
+          "path": "./theme/khazad-dump.json"
+        },
+        {
+          "label": "Khazâd dûmp Midnight",
+          "uiTheme": "vs-dark",
+          "path": "./theme/khazad-dump-midnight.json"
+        },
+        {
+          "label": "Khazâd dûmp Soft",
+          "uiTheme": "vs-dark",
+          "path": "./theme/khazad-dump-soft.json"
+        }
+      ]
+    },
+    "devDependencies": {
+        "js-yaml": "^4.1.0",
+        "prettier": "^3.0.0",
+        "tinycolor2": "^1.6.0",
+        "vsce": "^2.15.0"
+    }
+  }
