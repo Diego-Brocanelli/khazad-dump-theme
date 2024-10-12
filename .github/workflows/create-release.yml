@@ -15,13 +15,14 @@ jobs:
           cache: npm
       - run: npm install && mkdir -p ./bin
       - run: npm run package
+      - run: echo "VERSION=$(jq -r .version package.json)" >> $GITHUB_ENV
       - uses: actions/create-release@v1
         id: create_release
         env:
           GITHUB_TOKEN: ${{ secrets.GB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
+          tag_name: ${{ env.VERSION }}
+          release_name: ${{ env.VERSION }}
           draft: true
       - uses: actions/upload-release-asset@v1
         env:
