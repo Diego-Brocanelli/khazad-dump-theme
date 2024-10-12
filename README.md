@@ -4,7 +4,7 @@
 
 Um tema para o Visual Studio Code, inspirado e baseado no [Dracula Theme](https://draculatheme.com/).
 
-[English Version](README_EN)
+[English Version](README_EN.md)
 
 ## Descrição
 
@@ -12,12 +12,9 @@ O **Khazad-dûmp** oferece uma paleta de cores equilibrada, otimizada para leitu
 
 ## Índice
 
-- [Desenvolvimento](#desenvovlimento)
+- [Desenvolvimento](#desenvolvimento)
 - [Como usar](#como-usar)
-    - [Pré-requisitos](#pre-requisitos)
-    - [Instruções de Instalação](#instrucoes-de-instalação)
-- [Contribuição](#contricuicao)
-- [Licença](#licenca)
+- [Licença](#licença)
 - [Autores](#autores)
 
 ## Desenvolvimento

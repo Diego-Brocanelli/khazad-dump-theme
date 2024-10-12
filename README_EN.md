@@ -4,7 +4,7 @@
 
 A Visual Studio Code theme inspired and based on the Dracula Theme.
 
-[Versão Português](README)
+[Versão Português](README.md)
 
 ## Description
 
@@ -14,8 +14,6 @@ A Visual Studio Code theme inspired and based on the Dracula Theme.
 
 - [Development](#development)
 - [How to use](#how-to-use)
-    - [Prerequisites](#prerequisites)
-    - [Installation Instructions](#installation-instructions)
 - [Contribution](#contribution)
 - [License](#license)
 - [Authors](#authors)
@@ -100,6 +98,6 @@ ext install DiegoBrocanelli.khazad-dump
 
 This project is licensed under the [MIT](LICENSE) License. See the LICENSE file for more details.
 
-## Autores
+## Authors
 
 Diego Brocanelli <diegod2@msn.com>
