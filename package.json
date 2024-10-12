@@ -1,6 +1,6 @@
 {
     "name": "khazad-dump",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "khazad-dump",
     "publisher": "DiegoBrocanelli",
     "license": "MIT",
@@ -20,7 +20,7 @@
         "Diego Brocanelli"
     ],
     "engines": {
-      "vscode": "^1.94.0"
+      "vscode": "^1.1.0"
     },
     "categories": [
       "Themes"
