@@ -5,6 +5,10 @@
     "publisher": "Diego Brocanelli",
     "license": "MIT",
     "description": "A Dark theme focused on a soft and pleasant color palette for long hours of programming.",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Diego-Brocanelli/khazad-dump-theme.git"
+    },
     "scripts": {
         "build": "node ./scripts/build.js",
         "lint": "node ./scripts/lint.js",
