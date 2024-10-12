@@ -1,5 +1,5 @@
 $schema: vscode://schemas/color-theme
-name: Khazâd dûmp
+name: Khazad-dûmp Midnight
 author: Diego Brocanelli
 maintainers:
   - Diego Brocanelli <diegod2@msn.com>
@@ -7,17 +7,19 @@ semanticClass: theme.khazadDump
 semanticHighlighting: true
 khazadDump:
   base:
-    - &BG        '#282A36'
-    - &FG        '#F8F8F2'
-    - &SELECTION '#44475A'
-    - &COMMENT   '#6272A4'
-    - &CYAN      '#8BE9FD'
-    - &GREEN     '#50FA7B'
-    - &ORANGE    '#FFB86C'
-    - &PINK      '#FF79C6'
-    - &PURPLE    '#BD93F9'
-    - &RED       '#FF5555'
-    - &YELLOW    '#F1FA8C'
+    - &BG         '#0B0B0B'
+    - &FG         '#F8F8F2'
+    - &SELECTION  '#44475A'
+    - &COMMENT    '#6272A4'
+    - &CYAN       '#8BE9FD'
+    - &GREEN      '#7bb256'
+    - &GREEN2     '#6989d0'
+    - &ORANGE     '#FFB86C'
+    - &ORANGEDARK '#CA6C62'
+    - &PINK       '#FF79C6'
+    - &PURPLE     '#BD93F9'
+    - &RED        '#FF5555'
+    - &YELLOW     '#F1FA8C'
   ansi:
     - &COLOR0        '#21222C'
     - &COLOR1        '#FF5555'
@@ -47,12 +49,11 @@ khazadDump:
     # UI Variants
     - &BGLighter     '#424450'
     - &BGLight       '#343746' # HSV (230   , 25.71, 27.45)
-    - &BGDark        '#21222C' # HSV (234.55, 25   , 17.25)
-    - &BGDarker      '#191A21' # HSV (234.55, 25   , 13   )
+    - &BGDark        '#0B0B0B' #
+    - &BGDarker      '#0B0B0B' #
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:
-
   # Integrated Terminal Colors
   terminal.background: *BG
   terminal.foreground: *FG
@@ -67,18 +68,19 @@ colors:
   terminal.ansiBlack: *COLOR0
   terminal.ansiRed: *COLOR1
   terminal.ansiGreen: *COLOR2
-  terminal.ansiYellow: *COLOR3
+  terminal.ansiYellow: *GREEN
   terminal.ansiBlue: *COLOR4
   terminal.ansiMagenta: *COLOR5
   terminal.ansiCyan: *COLOR6
   terminal.ansiWhite: *COLOR7
+  terminal.border: *PURPLE
 
   # Contrast Colors
   contrastBorder:                                                               # An extra border around elements to separate them from others for greater contrast
   contrastActiveBorder:                                                         # An extra border around active elements to separate them from others for greater contrast
 
   # Base Colors
-  focusBorder: *COMMENT                                                         # Overall border color for focused elements. This color is only used if not overridden by a component
+  focusBorder: *PURPLE                                                         # Overall border color for focused elements. This color is only used if not overridden by a component
   foreground: *FG                                                               # Overall foreground color. This color is only used if not overridden by a component
   widget.shadow:                                                                # Shadow color of widgets such as Find/Replace inside the editor
   selection.background: *PURPLE                                                 # Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal)
@@ -102,7 +104,7 @@ colors:
   # Input Control
   input.background: *BG                                                         # Input box background
   input.foreground: *FG                                                         # Input box foreground
-  input.border: *BGDarker                                                       # Input box border
+  input.border: *PURPLE                                                       # Input box border
   input.placeholderForeground: *COMMENT                                         # Input box foreground color for placeholder text
   inputOption.activeBorder: *PURPLE                                             # Border color of activated options in input fields
   inputValidation.infoForeground:                                               # Input validation foreground color for information severity
@@ -126,7 +128,7 @@ colors:
   badge.background: *SELECTION                                                  # Badge background color
 
   # Progress Bar
-  progressBar.background: *PINK                                                 # Background color of the progress bar shown for long running operations
+  progressBar.background: *PURPLE                                                 # Background color of the progress bar shown for long running operations
 
   # List & Trees
   list.activeSelectionBackground: *SELECTION                                    # List/Tree background color for the selected item when the list/tree is active
@@ -172,7 +174,7 @@ colors:
   tab.activeBackground: *BG                                                     # Active Tab background color
   tab.activeForeground: *FG                                                     # Active Tab foreground color in an active group
   tab.border: *BGDarker                                                         # Border to separate Tabs from each other
-  tab.activeBorderTop: !alpha [*PINK, 80]                                       # A border drawn to the top of the active tab
+  tab.activeBorderTop: *PURPLE                                                  # A border drawn to the top of the active tab
   tab.activeBorder:                                                             # A border drawn to the bottom of the active tab
   tab.unfocusedActiveBorder:                                                    # A border drawn to the bottom of the active tab in an editor group that is not focused
   tab.inactiveBackground: *BGDark                                               # Inactive Tab background color
@@ -316,7 +318,7 @@ colors:
   # Panel Colors
   panel.background: *BG                                                         # Panel background color
   panel.border: *PURPLE                                                         # Panel border color on the top separating to the editor
-  panelTitle.activeBorder: *PINK                                                # Border color for the active panel title
+  panelTitle.activeBorder: *PURPLE                                              # Border color for the active panel title
   panelTitle.activeForeground: *FG                                              # Title color for the active panel
   panelTitle.inactiveForeground: *COMMENT                                       # Title color for the inactive panel
 
@@ -348,7 +350,7 @@ colors:
 
   # Quick Picker
   pickerGroup.border: *PURPLE                                                   # Quick picker (Quick Open) color for grouping borders
-  pickerGroup.foreground: *CYAN                                                 # Quick picker (Quick Open) color for grouping labels
+  pickerGroup.foreground: *PURPLE                                                 # Quick picker (Quick Open) color for grouping labels
 
   # Debug
   debugToolBar.background: *BGDark                                              # Debug toolbar background color
@@ -497,6 +499,7 @@ tokenColors:
     - markup.underline.link.image
     settings:
       foreground: *CYAN
+      fontStyle: italic
 
   - name: Link text, image alt text (prose)
     scope:
@@ -505,7 +508,8 @@ tokenColors:
     - string.other.link.description
     - string.other.link.title
     settings:
-      foreground: *PINK
+      foreground: *PURPLE
+      fontStyle: italic
 
   - name: Blockquotes (prose)
     scope:
@@ -565,7 +569,7 @@ tokenColors:
     - entity.name.type.class
     - entity.name.class
     settings:
-      foreground: *CYAN
+      foreground: *GREEN2
       fontStyle: normal
 
   - name: this, super, self, etc.
@@ -585,7 +589,7 @@ tokenColors:
     - entity.other.inherited-class
     settings:
       fontStyle: italic
-      foreground: *CYAN
+      foreground: *GREEN2
 
 # =============================================================================
 # Comments
@@ -599,6 +603,7 @@ tokenColors:
     - wildcard.comment
     settings:
       foreground: *COMMENT
+      fontStyle: italic
 
   - name: JSDoc-style keywords
     scope:
@@ -606,7 +611,8 @@ tokenColors:
     - comment.block.documentation keyword
     - comment.block.documentation storage.type.class
     settings:
-      foreground: *PINK
+      foreground: *PURPLE
+      fontStyle: italic
 
   - name: JSDoc-style types
     scope:
@@ -620,6 +626,7 @@ tokenColors:
     - comment.block.documentation entity.name.type punctuation.definition.bracket
     settings:
       foreground: *CYAN
+      fontStyle: italic
 
   - name: JSDoc-style comment parameters
     scope:
@@ -646,6 +653,7 @@ tokenColors:
     - constant.regexp
     settings:
       foreground: *PINK
+      fontStyle: italic
 
 # =============================================================================
 # Entities
@@ -685,7 +693,7 @@ tokenColors:
     - support.function.any-method.lua
     - keyword.operator.function.infix
     settings:
-      foreground: *GREEN
+      foreground: *GREEN2
 
   - name: Function parameters
     scope:
@@ -704,7 +712,7 @@ tokenColors:
     - meta.decorator variable.other.readwrite
     - meta.decorator variable.other.property
     settings:
-      foreground: *GREEN
+      foreground: *GREEN2
       fontStyle: italic
 
   - name: Decorator Objects
@@ -722,7 +730,7 @@ tokenColors:
     - keyword
     - punctuation.definition.keyword
     settings:
-      foreground: *PINK
+      foreground: *PURPLE
 
   - name: Keyword "new"
     scope:
@@ -746,7 +754,7 @@ tokenColors:
     - support
     settings:
       fontStyle: italic
-      foreground: *CYAN
+      foreground: *GREEN2
 
   - name: Built-in magic functions and constants
     scope:
@@ -846,14 +854,14 @@ tokenColors:
     - entity.name.tag.yaml
     - variable.other.key.toml
     settings:
-      foreground: *CYAN
+      foreground: *GREEN2
 
   - name: Dates / timestamps (serializable languages)
     scope:
     - constant.other.date
     - constant.other.timestamp
     settings:
-      foreground: *ORANGE
+      foreground: *GREEN
 
   - name: YAML aliases
     scope:
@@ -874,7 +882,7 @@ tokenColors:
     - source.groovy storage.type.def
     settings:
       fontStyle: regular
-      foreground: *PINK
+      foreground: *PURPLE
 
   - name: Types
     scope:
@@ -899,7 +907,7 @@ tokenColors:
     - storage.type.ocaml
     settings:
       fontStyle: italic
-      foreground: *CYAN
+      foreground: *GREEN2
 
   - name: Generics, templates, and mapped type declarations
     scope:
@@ -913,7 +921,7 @@ tokenColors:
     scope:
     - storage.modifier
     settings:
-      foreground: *PINK
+      foreground: *PURPLE
 
 # =============================================================================
 # RegExp
@@ -932,7 +940,7 @@ tokenColors:
     # NOTE: The scope name is a misnomer. It is actually non-capture operators
     - punctuation.definition.group.capture.regexp
     settings:
-      foreground: *PINK
+      foreground: *PURPLE
 
   - name: RegExp start and end characters
     scope:
@@ -975,7 +983,7 @@ tokenColors:
     scope:
     - string
     settings:
-      foreground: *YELLOW
+      foreground: *GREEN
 
   - name: String quotes (temporary vscode fix)
     scope:
@@ -1002,6 +1010,7 @@ tokenColors:
     - string.quoted.docstring.multi.python constant.character.escape
     settings:
       foreground: *COMMENT
+      fontStyle: italic
 
 # =============================================================================
 # Variables

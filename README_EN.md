@@ -1,0 +1,105 @@
+![Khazad-dûmp VSCode Theme project banner](/images/Khazad-dump.png)
+
+# Khazad-dûmp VSCode Theme
+
+A Visual Studio Code theme inspired and based on the Dracula Theme.
+
+[Versão Português](README)
+
+## Description
+
+**Khazad-dûmp** offers a balanced color palette designed for readability in low-light environments. It focuses on legibility and contrast, ensuring a comfortable and enjoyable experience for extended use.
+
+## Contents
+
+- [Development](#development)
+- [How to use](#how-to-use)
+    - [Prerequisites](#prerequisites)
+    - [Installation Instructions](#installation-instructions)
+- [Contribution](#contribution)
+- [License](#license)
+- [Authors](#authors)
+
+## Development
+
+### Prerequisites
+
+To develop the theme, you will need:
+
+- Docker;
+- The make package.
+
+### Installation Instructions
+
+1. Clone the theme repository:
+
+```bash
+git clone https://github.com/seu-usuario/khazad-dump-theme.git && \
+cd khazad-dump-theme
+```
+
+2. Build the Docker container:
+
+```bash
+make build
+```
+
+3. Access the shell inside the container:
+
+```bash
+make sh
+```
+
+> Inside the container, the theme files are located in the **src** directory.
+
+4. To generate the theme JSON files, run the following command:
+
+```bash
+npm run build
+```
+
+> OThe files will be generated in the **theme** directory.
+
+## How to use
+
+### VSCode
+
+Open the extensions manager using the shortcut:
+
+```bash
+CTRL+SHFIT+X # windows or Linux
+
+Ou
+
+CMD+SHIFT+X # mac
+```
+
+Search for **khazad-dump** and click **Install**.
+
+### Terminal
+
+```bash
+ext install DiegoBrocanelli.khazad-dump
+```
+
+## Theme Options
+
+### Default
+
+![Imagem da opção padrão do tema](/images/khazad-dump-vscode.png)
+
+### Midnight
+
+![Imagem da opção midnight do tema](/images/khazad-dump-midnight-vscode.png)
+
+### Soft
+
+![Imagem da opção soft do tema](/images/khazad-dump-soft-vscode.png)
+
+## License
+
+This project is licensed under the [MIT](LICENSE) License. See the LICENSE file for more details.
+
+## Autores
+
+Diego Brocanelli <diegod2@msn.com>

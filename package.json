@@ -25,7 +25,7 @@
         "khazad-dump",
         "khazad",
         "dump",
-        "Khazâd dûmp",
+        "Khazad-dûmp",
         "Khazâd",
         "dûmp",
         "dark",
@@ -36,17 +36,17 @@
     "contributes": {
       "themes": [
         {
-          "label": "Khazâd dûmp",
+          "label": "Khazad-dûmp",
           "uiTheme": "vs-dark",
           "path": "./theme/khazad-dump.json"
         },
         {
-          "label": "Khazâd dûmp Midnight",
+          "label": "Khazad-dûmp Midnight",
           "uiTheme": "vs-dark",
           "path": "./theme/khazad-dump-midnight.json"
         },
         {
-          "label": "Khazâd dûmp Soft",
+          "label": "Khazad-dûmp Soft",
           "uiTheme": "vs-dark",
           "path": "./theme/khazad-dump-soft.json"
         }
