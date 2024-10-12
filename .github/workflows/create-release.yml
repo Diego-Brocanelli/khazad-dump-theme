@@ -18,14 +18,14 @@ jobs:
       - uses: actions/create-release@v1
         id: create_release
         env:
-          GB_TOKEN: ${{ secrets.GB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GB_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ github.ref }}
           draft: true
       - uses: actions/upload-release-asset@v1
         env:
-          GB_TOKEN: ${{ secrets.GB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./bin/khazad-dump.vsix
