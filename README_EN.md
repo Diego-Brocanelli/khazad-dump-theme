@@ -1,4 +1,4 @@
-![Khazad-dûmp VSCode Theme project banner](https://github.com/Diego-Brocanelli/khazad-dump-theme/blob/main/images/Khazad-dump.png)
+![Khazad-dûmp VSCode Theme project banner](/images/Khazad-dump.png)
 
 # Khazad-dûmp VSCode Theme
 
@@ -84,19 +84,19 @@ ext install DiegoBrocanelli.khazad-dump
 
 ### Default
 
-![Imagem da opção padrão do tema](https://github.com/Diego-Brocanelli/khazad-dump-theme/blob/main/images/khazad-dump-vscode.png)
+![Imagem da opção padrão do tema](/images/khazad-dump-vscode.png)
 
 ### Midnight
 
-![Imagem da opção midnight do tema](https://github.com/Diego-Brocanelli/khazad-dump-theme/blob/main/images/khazad-dump-midnight-vscode.png)
+![Imagem da opção midnight do tema](/images/khazad-dump-midnight-vscode.png)
 
 ### Soft
 
-![Imagem da opção soft do tema](https://github.com/Diego-Brocanelli/khazad-dump-theme/blob/main/images/khazad-dump-soft-vscode.png)
+![Imagem da opção soft do tema](/images/khazad-dump-soft-vscode.png)
 
 ## License
 
-This project is licensed under the [MIT](https://github.com/Diego-Brocanelli/khazad-dump-theme/blob/main/LICENSE) License. See the LICENSE file for more details.
+This project is licensed under the [MIT](/LICENSE) License. See the LICENSE file for more details.
 
 ## Authors
 
