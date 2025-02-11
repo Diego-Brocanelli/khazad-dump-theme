@@ -89,6 +89,10 @@ ext install DiegoBrocanelli.khazad-dump
 
 ![Imagem da opção midnight do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-midnight-vscode.png)
 
+### Mithril
+
+![Imagem da opção mithril do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-mithril-vscode.png)
+
 ### Soft
 
 ![Imagem da opção soft do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-soft-vscode.png)

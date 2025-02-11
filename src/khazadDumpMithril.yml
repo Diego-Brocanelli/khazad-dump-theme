@@ -1,5 +1,5 @@
 $schema: vscode://schemas/color-theme
-name: Khazad-dûmp
+name: Khazad-dûmp Mithril
 author: Diego Brocanelli
 maintainers:
   - Diego Brocanelli <diegod2@msn.com>
@@ -7,7 +7,7 @@ semanticClass: theme.khazadDump
 semanticHighlighting: true
 khazadDump:
   base:
-    - &BG         '#1A1A1A'
+    - &BG         '#1e1e1e'
     - &FG         '#F8F8F2'
     - &SELECTION  '#44475A'
     - &COMMENT    '#6272A4'
@@ -49,8 +49,8 @@ khazadDump:
     # UI Variants
     - &BGLighter     '#424450'
     - &BGLight       '#343746' # HSV (230   , 25.71, 27.45)
-    - &BGDark        '#1E1E1E' #
-    - &BGDarker      '#1A1A1A' #
+    - &BGDark        '#303030' #
+    - &BGDarker      '#1e1e1e' #
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:

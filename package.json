@@ -1,6 +1,6 @@
 {
     "name": "khazad-dump",
-    "version": "1.0.2",
+    "version": "1.4.0",
     "displayName": "khazad-dump",
     "publisher": "DiegoBrocanelli",
     "license": "MIT",
@@ -48,6 +48,11 @@
           "label": "Khazad-dûmp Midnight",
           "uiTheme": "vs-dark",
           "path": "./theme/khazad-dump-midnight.json"
+        },
+        {
+          "label": "Khazad-dûmp Mithril",
+          "uiTheme": "vs-dark",
+          "path": "./theme/khazad-dump-mithril.json"
         },
         {
           "label": "Khazad-dûmp Soft",

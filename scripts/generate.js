@@ -30,30 +30,6 @@ const withAlphaType = new Type('!alpha', {
 
 const schema = DEFAULT_SCHEMA.extend([withAlphaType]);
 
-/**
- * Soft variant transform.
- * @type {ThemeTransform}
- */
-// const transformSoft = theme => {
-//     /** @type {Theme} */
-//     const soft = JSON.parse(JSON.stringify(theme));
-//     const brightColors = [...soft.khazadDump.ansi, ...soft.khazadDump.brightOther];
-//     for (const key of Object.keys(soft.colors)) {
-//         if (brightColors.includes(soft.colors[key])) {
-//             soft.colors[key] = tinycolor(soft.colors[key])
-//                 .desaturate(20)
-//                 .toHexString();
-//         }
-//     }
-//     soft.tokenColors = soft.tokenColors.map((value) => {
-//         if (brightColors.includes(value.settings.foreground)) {
-//             value.settings.foreground = tinycolor(value.settings.foreground).desaturate(20).toHexString();
-//         }
-//         return value;
-//     })
-//     return soft;
-// };
-
 module.exports = async () => {
     const yamlFile = await readFile(
         join(__dirname, '..', 'src', 'khazadDump.yml'),
@@ -65,6 +41,11 @@ module.exports = async () => {
         'utf-8'
     );
 
+    const mithrilYamlFile = await readFile(
+        join(__dirname, '..', 'src', 'khazadDumpMithril.yml'),
+        'utf-8'
+    );
+
     const softYamlFile = await readFile(
         join(__dirname, '..', 'src', 'khazadDumpSoft.yml'),
         'utf-8'
@@ -73,6 +54,7 @@ module.exports = async () => {
     /** @type {Theme} */
     const base     = load(yamlFile, { schema });
     const midnight = load(midnightYamlFile, { schema });
+    const mithril  = load(mithrilYamlFile, { schema });
     const soft     = load(softYamlFile, { schema });
 
     // Remove nulls and other falsey values from colors
@@ -88,6 +70,12 @@ module.exports = async () => {
         }
     }
 
+    for (const key of Object.keys(mithril.colors)) {
+        if (!mithril.colors[key]) {
+            delete mithril.colors[key];
+        }
+    }
+
     for (const key of Object.keys(soft.colors)) {
         if (!soft.colors[key]) {
             delete soft.colors[key];
@@ -97,6 +85,7 @@ module.exports = async () => {
     return {
         base,
         midnight,
+        mithril,
         soft
     };
 };

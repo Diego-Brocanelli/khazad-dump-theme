@@ -84,15 +84,19 @@ ext install DiegoBrocanelli.khazad-dump
 
 ### Default
 
-![Imagem da opção padrão do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-vscode.png)
+![Image of the theme's default option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-vscode.png)
 
 ### Midnight
 
-![Imagem da opção midnight do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-midnight-vscode.png)
+![Image of the theme's midnight option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-midnight-vscode.png)
+
+### Mithril
+
+![Image of the theme's mithril option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-mithril-vscode.png)
 
 ### Soft
 
-![Imagem da opção soft do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-soft-vscode.png)
+![Image of the theme's soft option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-soft-vscode.png)
 
 ## License
 
