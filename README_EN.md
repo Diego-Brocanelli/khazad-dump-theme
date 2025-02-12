@@ -92,21 +92,41 @@ Install the `fonts` located in the fonts directory. Example: `Zed Plex Mono`.
 
 ## Theme Options
 
-### Default
+### Arkenstone
 
-![Image of the theme's default option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-vscode.png)
+A legendary, radiant, and immensely valuable gemstone, symbolizing power and leadership.
 
-### Midnight
+![Image of the theme's Arkenstone option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-arkenstone-vscode.png)
 
-![Image of the theme's midnight option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-midnight-vscode.png)
+### Dûmûr
+
+Inspired by "dûm" from Khazad-dûm and "ûr," which refers to darkness, evoking a night and somber tone.
+
+![Image of the theme's Dûmûr option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-dumur-vscode.png)
+
+### Ithildin
+
+Silver moon used by the dwarves for secret inscriptions that glow in the moonlight.
+
+![Image of the theme's Ithildin option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-ithildin-vscode.png)
+
+### Khuzd
+
+Means "dwarf" in Khuzdul, representing the foundation of the theme.
+
+![Image of the theme's Khuzd option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-khuzd-vscode.png)
 
 ### Mithril
 
-![Image of the theme's mithril option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-mithril-vscode.png)
+Legendary metal, lightweight and durable, highly valued by dwarves for its exceptional beauty and resilience.
 
-### Soft
+![Image of the theme's Mithril option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-mithril-vscode.png)
 
-![Image of the theme's soft option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-soft-vscode.png)
+### Narag
+
+Means "stone" in Khuzdul, referring to the solidity and smoothness of the rock shaped by the dwarves.
+
+![Image of the theme's Narag option](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-narag-vscode.png)
 
 ## License
 

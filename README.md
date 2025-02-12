@@ -117,6 +117,8 @@ Significa "anão" em Khuzdul, representando a base do tema.
 
 ### Mithril
 
+Metal lendário, leve e resistente, altamente valorizado pelos anãos por sua beleza e durabilidade excepcionais.
+
 ![Imagem da opção mithril do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-mithril-vscode.png)
 
 ### Narag
