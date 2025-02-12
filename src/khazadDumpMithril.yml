@@ -10,8 +10,8 @@ semanticHighlighting: true
 colors:
   # Cores principais do editor
   # ----------------------------------------------------------------------------
-  editor.background: "#1e1e1e"  # Cor de fundo do editor (cinza escuro)
-  editor.foreground: "#D8DEE9"  # Cor do texto no editor (cinza claro)
+  editor.background: "#0d1016"  # Cor de fundo do editor (cinza escuro)
+  editor.foreground: "#C5C8C6"  # Cor do texto no editor (cinza claro)
   editorCursor.foreground: "#A3BE8C"  # Cor do cursor no editor (verde suave)
   editor.lineHighlightBackground: "#3B4048"  # Cor de fundo da linha atual (cinza claro)
   editor.selectionBackground: "#4C566A"  # Cor de fundo quando texto está selecionado (azul claro)
@@ -23,8 +23,8 @@ colors:
 
   # Cores da barra lateral
   # ----------------------------------------------------------------------------
-  sideBar.background: "#303030"  # Cor de fundo da barra lateral (cinza escuro)
-  sideBar.foreground: "#D8DEE9"  # Cor do texto da barra lateral (cinza claro)
+  sideBar.background: "#1f2127"  # Cor de fundo da barra lateral (cinza escuro)
+  sideBar.foreground: "#C5C8C6"  # Cor do texto da barra lateral (cinza claro)
   sideBarTitle.foreground: "#62a0ea"  # Cor do título da barra lateral (azul suave)
   sideBarSectionHeader.background: "#3B4048"  # Cor de fundo das seções na barra lateral (cinza escuro)
   sideBarSectionHeader.foreground: "#62a0ea"  # Cor do texto das seções na barra lateral (azul suave)
@@ -32,24 +32,24 @@ colors:
   # Cores da barra de status
   # ----------------------------------------------------------------------------
   statusBar.background: "#2E353F"  # Cor de fundo da barra de status (cinza escuro)
-  statusBar.foreground: "#D8DEE9"  # Cor do texto da barra de status (cinza claro)
+  statusBar.foreground: "#C5C8C6"  # Cor do texto da barra de status (cinza claro)
   statusBarItem.errorBackground: "#62a0ea"  # Cor de fundo para itens de erro na barra de status (vermelho suave)
   statusBarItem.warningBackground: "#EBCB8B"  # Cor de fundo para itens de aviso na barra de status (amarelo suave)
   statusBarItem.successBackground: "#A3BE8C"  # Cor de fundo para itens de sucesso na barra de status (verde suave)
 
   # Cores de editor e terminal
   # ----------------------------------------------------------------------------
-  terminal.background: "#1e1e1e"  # Cor de fundo do terminal (cinza escuro)
-  terminal.foreground: "#D8DEE9"  # Cor do texto no terminal (cinza claro)
+  terminal.background: "#0d1016"  # Cor de fundo do terminal (cinza escuro)
+  terminal.foreground: "#C5C8C6"  # Cor do texto no terminal (cinza claro)
   terminalCursor.background: "#A3BE8C"  # Cor de fundo do cursor no terminal (verde suave)
   terminalCursor.foreground: "#A3BE8C"  # Cor do cursor no terminal (verde suave)
-  terminal.ansiBlack: "#1e1e1e"  # Cor do preto no terminal (cinza escuro)
+  terminal.ansiBlack: "#0d1016"  # Cor do preto no terminal (cinza escuro)
   terminal.ansiBlue: "#5E81AC"  # Cor do azul no terminal (azul suave)
   terminal.ansiCyan: "#88C0D0"  # Cor do ciano no terminal (azul claro)
   terminal.ansiGreen: "#A3BE8C"  # Cor do verde no terminal (verde suave)
   terminal.ansiMagenta: "#B48EAD"  # Cor do magenta no terminal (roxo suave)
   terminal.ansiRed: "#BF616A"  # Cor do vermelho no terminal (vermelho suave)
-  terminal.ansiWhite: "#D8DEE9"  # Cor do branco no terminal (cinza claro)
+  terminal.ansiWhite: "#C5C8C6"  # Cor do branco no terminal (cinza claro)
   terminal.ansiYellow: "#EBCB8B"  # Cor do amarelo no terminal (amarelo suave)
 
 tokenColors:
@@ -65,7 +65,7 @@ tokenColors:
   - scope:
       - "variable"
     settings:
-      foreground: "#D8DEE9"  # Cor das variáveis no código (cinza claro)
+      foreground: "#C5C8C6"  # Cor das variáveis no código (cinza claro)
   - scope:
       - "string"
     settings:
@@ -108,6 +108,16 @@ tokenColors:
       - variable.parameter.function.language.special
     settings:
       foreground: "#86d8e7"
+  - name: this, super, self, etc italic.
+    scope:
+      - keyword.expressions-and-types.swift
+      - keyword.other.this
+      - variable.language
+      - variable.language punctuation.definition.variable.php
+      - variable.other.readwrite.instance.ruby
+      - variable.parameter.function.language.special
+    settings:
+      fontStyle: italic
   - name: Function names
     scope:
       - entity.name.function
@@ -129,6 +139,7 @@ tokenColors:
   - scope: "punctuation.definition.variable.php"  # Escopo para o símbolo `$` no PHP
     settings:
       foreground: "#86d8e7"  # Cor do símbolo '$' no PHP (azul claro)
+      fontStyle: italic
   - scope: "punctuation.definition.bracket.php, punctuation.definition.parenthesis.php"  # Escopo para colchetes e parênteses no PHP
     settings:
       foreground: "#f4f4f4"  # Cor personalizada para os parênteses e colchetes (cor quase branca)
@@ -141,7 +152,7 @@ tokenColors:
       foreground: "#9fd99a"  # Cor das strings no PHP (verde claro)
   - scope: "constant.numeric.php"  # Escopo para números no PHP
     settings:
-      foreground: "#D8DEE9"  # Cor para números (cinza claro)
+      foreground: "#C5C8C6"  # Cor para números (cinza claro)
   - scope: "variable.language.php"  # Escopo para palavras-chave de linguagem no PHP (como 'echo', 'return', etc.)
     settings:
       foreground: "#caa5f6"  # Cor para palavras-chave da linguagem PHP
@@ -239,6 +250,6 @@ tokenColors:
 
 
 activityBar.background: "#2E353F"  # Cor de fundo da barra de atividades (cinza escuro)
-activityBar.foreground: "#D8DEE9"  # Cor do texto da barra de atividades (cinza claro)
+activityBar.foreground: "#C5C8C6"  # Cor do texto da barra de atividades (cinza claro)
 activityBarBadge.background: "#A3BE8C"  # Cor de fundo do badge na barra de atividades (verde suave)
 activityBarBadge.foreground: "#FFFFFF"  # Cor do texto do badge na barra de atividades (branco)

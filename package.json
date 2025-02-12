@@ -1,6 +1,6 @@
 {
     "name": "khazad-dump",
-    "version": "1.5.0",
+    "version": "2.0.0",
     "displayName": "khazad-dump",
     "publisher": "DiegoBrocanelli",
     "license": "MIT",
@@ -33,21 +33,45 @@
         "Khazâd",
         "dûmp",
         "dark",
+        "light",
         "theme",
-        "color-theme"
+        "color-theme",
+        "Arkenstone",
+        "Dûmûr",
+        "Ithildin",
+        "Khuzd",
+        "Mithril",
+        "Narag"
     ],
     "icon": "images/icon.png",
     "contributes": {
+      "iconThemes": [
+        {
+          "id": "khazad-dump-icons",
+          "label": "Khazad-dûmp-icons",
+          "path": "./khazad-dump-icons.json"
+        }
+      ],
       "themes": [
         {
-          "label": "Khazad-dûmp",
-          "uiTheme": "vs-dark",
-          "path": "./theme/khazad-dump.json"
+          "label": "Khazad-dûmp Arkenstone",
+          "uiTheme": "vs",
+          "path": "./theme/khazad-dump-arkenstone.json"
         },
         {
-          "label": "Khazad-dûmp Midnight",
+          "label": "Khazad-dûmp Dûmûr",
           "uiTheme": "vs-dark",
-          "path": "./theme/khazad-dump-midnight.json"
+          "path": "./theme/khazad-dump-dumur.json"
+        },
+        {
+          "label": "Khazad-dûmp Ithildin",
+          "uiTheme": "vs",
+          "path": "./theme/khazad-dump-ithildin.json"
+        },
+        {
+          "label": "Khazad-dûmp Khuzd",
+          "uiTheme": "vs-dark",
+          "path": "./theme/khazad-dump-khuzd.json"
         },
         {
           "label": "Khazad-dûmp Mithril",
@@ -55,9 +79,9 @@
           "path": "./theme/khazad-dump-mithril.json"
         },
         {
-          "label": "Khazad-dûmp Soft",
+          "label": "Khazad-dûmp Narag",
           "uiTheme": "vs-dark",
-          "path": "./theme/khazad-dump-soft.json"
+          "path": "./theme/khazad-dump-narag.json"
         }
       ]
     },

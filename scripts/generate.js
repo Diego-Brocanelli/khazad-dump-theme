@@ -31,13 +31,23 @@ const withAlphaType = new Type('!alpha', {
 const schema = DEFAULT_SCHEMA.extend([withAlphaType]);
 
 module.exports = async () => {
-    const yamlFile = await readFile(
-        join(__dirname, '..', 'src', 'khazadDump.yml'),
+    const arkenstoneYamlFile = await readFile(
+        join(__dirname, '..', 'src', 'KhazadDumpArkenstone.yml'),
         'utf-8'
     );
 
-    const midnightYamlFile = await readFile(
-        join(__dirname, '..', 'src', 'khazadDumpMidnight.yml'),
+    const dumurYamlFile = await readFile(
+        join(__dirname, '..', 'src', 'khazadDumpDumur.yml'),
+        'utf-8'
+    );
+
+    const ithildinYamlFile = await readFile(
+        join(__dirname, '..', 'src', 'KhazadDumpIthildin.yml'),
+        'utf-8'
+    );
+
+    const khuzdYamlFile = await readFile(
+        join(__dirname, '..', 'src', 'khazadDumpKhuzd.yml'),
         'utf-8'
     );
 
@@ -46,27 +56,42 @@ module.exports = async () => {
         'utf-8'
     );
 
-    const softYamlFile = await readFile(
-        join(__dirname, '..', 'src', 'khazadDumpSoft.yml'),
+    const naragYamlFile = await readFile(
+        join(__dirname, '..', 'src', 'khazadDumpNarag.yml'),
         'utf-8'
     );
 
     /** @type {Theme} */
-    const base     = load(yamlFile, { schema });
-    const midnight = load(midnightYamlFile, { schema });
-    const mithril  = load(mithrilYamlFile, { schema });
-    const soft     = load(softYamlFile, { schema });
+    const arkenstone = load(arkenstoneYamlFile, { schema });
+    const dumur      = load(dumurYamlFile, { schema });
+    const ithildin   = load(ithildinYamlFile, { schema });
+    const Khuzd      = load(khuzdYamlFile, { schema });
+    const mithril    = load(mithrilYamlFile, { schema });
+    const narag      = load(naragYamlFile, { schema });
 
     // Remove nulls and other falsey values from colors
-    for (const key of Object.keys(base.colors)) {
-        if (!base.colors[key]) {
-            delete base.colors[key];
+
+    for (const key of Object.keys(arkenstone.colors)) {
+        if (!arkenstone.colors[key]) {
+            delete arkenstone.colors[key];
         }
     }
 
-    for (const key of Object.keys(midnight.colors)) {
-        if (!midnight.colors[key]) {
-            delete midnight.colors[key];
+    for (const key of Object.keys(dumur.colors)) {
+        if (!dumur.colors[key]) {
+            delete dumur.colors[key];
+        }
+    }
+
+    for (const key of Object.keys(ithildin.colors)) {
+        if (!ithildin.colors[key]) {
+            delete ithildin.colors[key];
+        }
+    }
+
+    for (const key of Object.keys(Khuzd.colors)) {
+        if (!Khuzd.colors[key]) {
+            delete Khuzd.colors[key];
         }
     }
 
@@ -76,16 +101,18 @@ module.exports = async () => {
         }
     }
 
-    for (const key of Object.keys(soft.colors)) {
-        if (!soft.colors[key]) {
-            delete soft.colors[key];
+    for (const key of Object.keys(narag.colors)) {
+        if (!narag.colors[key]) {
+            delete narag.colors[key];
         }
     }
 
     return {
-        base,
-        midnight,
+        arkenstone,
+        dumur,
+        ithildin,
+        Khuzd,
         mithril,
-        soft
+        narag
     };
 };

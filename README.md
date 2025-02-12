@@ -79,23 +79,51 @@ Pesquise por **khazad-dump** e clique em **Instalar**.
 ext install DiegoBrocanelli.khazad-dump
 ```
 
+# Configurações
+
+## Ícones
+
+Para definir os ícones, pressione `Cmd+Shift+P` (macOS) ou `Ctrl+Shift+P` (Windows/Linux), digite `File Icon Theme` e selecione a opção `Khazad dûmp icons`.
+
+## Fonts
+
+Instale as fontes que estão em `fonts`. Exemplo `Zed Plex Mono`.
+
 ## Opções
 
-### Default
+### Arkenstone
 
-![Imagem da opção padrão do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-vscode.png)
+Pedra preciosa lendária, resplandecente e de imenso valor, símbolo de poder e liderança
 
-### Midnight
+![Imagem da opção Arkenstone do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-arkenstone-vscode.png)
 
-![Imagem da opção midnight do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-midnight-vscode.png)
+### Dûmûr
+
+Inspirado em "dûm" de Khazad-dûm e "ûr", que remete à escuridão, evocando um tom noturno e sombrio.
+
+![Imagem da opção Dûmûr do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-dumur-vscode.png)
+
+### Ithildin
+
+Lua prateada usada pelos anãos para inscrições secretas que brilham à luz da lua.
+
+![Imagem da opção Ithildin do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-ithildin-vscode.png)
+
+### Khuzd
+
+Significa "anão" em Khuzdul, representando a base do tema.
+
+![Imagem da opção Khuzd do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-khuzd-vscode.png)
 
 ### Mithril
 
 ![Imagem da opção mithril do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-mithril-vscode.png)
 
-### Soft
+### Narag
 
-![Imagem da opção soft do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-soft-vscode.png)
+Significa "pedra" em Khuzdul, remetendo à solidez e suavidade da rocha trabalhada pelos anãos.
+
+![Imagem da opção Narag do tema](https://raw.githubusercontent.com/Diego-Brocanelli/khazad-dump-theme/refs/heads/main/images/khazad-dump-narag-vscode.png)
 
 ## Licença
 

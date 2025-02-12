@@ -80,6 +80,16 @@ Search for **khazad-dump** and click **Install**.
 ext install DiegoBrocanelli.khazad-dump
 ```
 
+# Settings
+
+## Icons
+
+To set the icons, press `Cmd+Shift+P` (on macOS) or `Ctrl+Shift+P` (on Windows/Linux), type `File Icon Theme`, and choose the Khazad dûmp icons option.
+
+## Fonts
+
+Install the `fonts` located in the fonts directory. Example: `Zed Plex Mono`.
+
 ## Theme Options
 
 ### Default
